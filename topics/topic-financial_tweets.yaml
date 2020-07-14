@@ -1,7 +1,0 @@
-name: financial_tweets
-replication: 1
-partitions: 3
-configs:
-  compression.type: gzip
-  retention.bytes: "26214400"
-  segment.bytes: "8388608"

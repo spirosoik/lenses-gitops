@@ -1,7 +1,0 @@
-name: sea_vessel_position_reports
-replication: 1
-partitions: 3
-configs:
-  compression.type: uncompressed
-  retention.bytes: "26214400"
-  segment.bytes: "8388608"
