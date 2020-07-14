@@ -1,0 +1,35 @@
+name: fast_vessel_processor-value
+avroSchema: |-
+  {
+    "type": "record",
+    "name": "aisClassAPositionReport",
+    "namespace": "com.landoop.ais",
+    "doc": "Schema for AIS Class A Position Reports.",
+    "fields": [
+      {
+        "name": "MMSI",
+        "type": "long",
+        "doc": "User ID (MMSI)"
+      },
+      {
+        "name": "Speed",
+        "type": "float",
+        "doc": "Speed over Ground (SOG)"
+      },
+      {
+        "name": "Long",
+        "type": "double",
+        "doc": "Longitude"
+      },
+      {
+        "name": "Lat",
+        "type": "double",
+        "doc": "Latitude"
+      },
+      {
+        "name": "Timestamp",
+        "type": "long",
+        "doc": "Time the message was encoded to avro (nanoseconds since epoch). May be used for ordering."
+      }
+    ]
+  }

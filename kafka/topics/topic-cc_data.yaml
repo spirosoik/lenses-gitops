@@ -1,0 +1,5 @@
+name: cc_data
+replication: 1
+partitions: 1
+configs:
+  segment.bytes: "104857600"

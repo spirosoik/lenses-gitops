@@ -1,0 +1,15 @@
+name: ES-1
+templateName: Elasticsearch
+templateVersion: 1
+builtIn: true
+readOnly: false
+configuration:
+- key: nodes
+  value:
+  - http://localhost:9200
+createdBy: admin
+createdAt: 1594714693948
+modifiedBy: admin
+modifiedAt: 1594714693948
+tags:
+- preview

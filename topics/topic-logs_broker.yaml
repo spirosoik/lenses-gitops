@@ -1,0 +1,5 @@
+name: logs_broker
+replication: 1
+partitions: 1
+configs:
+  segment.bytes: "104857600"

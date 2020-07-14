@@ -1,0 +1,21 @@
+id: f193e45a-48c2-40c7-a4d4-72ba144644ac
+name: Credit Card
+lastUpdated: "2020-07-14T08:16:56.136Z"
+versions: 0
+impactType: HIGH
+impact:
+  topics:
+  - cc_payments
+  processors: []
+  connectors: []
+  apps:
+  - id: payments-processor
+    name: payments-processor
+    type: Other
+category: PII
+fields:
+- CreditCardId
+- cc
+- creditcard
+obfuscation: Last-4
+lastUpdatedUser: admin
