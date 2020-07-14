@@ -7,4 +7,5 @@ sql: |-
 runners: 1
 clusterName: ""
 namespace: ""
+name: "filter_fast_vessels"
 pipeline: filter_fast_vessels
