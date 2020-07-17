@@ -1,3 +1,3 @@
 # lenses-gitops
 
-GitOps change
+GitOps demo for KS.
