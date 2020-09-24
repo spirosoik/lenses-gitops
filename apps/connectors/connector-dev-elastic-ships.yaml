@@ -1,0 +1,10 @@
+clusterName: dev
+name: elastic-ships
+config:
+  connect.elastic.cluster.name: lenses-box
+  connect.elastic.kcql: INSERT INTO sea-vessel-position-reports SELECT * FROM sea_vessel_position_reports
+  connect.elastic.url: localhost:9300
+  connect.elastic.url.prefix: elasticsearch
+  connector.class: com.datamountaineer.streamreactor.connect.elastic6.ElasticSinkConnector
+  name: elastic-ships
+  topics: sea_vessel_position_reports

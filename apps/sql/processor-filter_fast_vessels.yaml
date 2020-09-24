@@ -1,0 +1,13 @@
+name: filter_fast_vessels
+sql: |-
+  SET defaults.topic.autocreate=true;
+
+  INSERT INTO fast_vessel_processor
+      SELECT STREAM MMSI, Speed, Longitude AS Long, Latitude AS Lat, `Timestamp`
+      FROM sea_vessel_position_reports
+      WHERE Speed > 10;
+runnerCount: 1
+cluster: IN-PROC
+namespace: Lenses
+pipeline: filter_fast_vessels
+appId: lsql-110250ab2332421db06d95555ab6e56d

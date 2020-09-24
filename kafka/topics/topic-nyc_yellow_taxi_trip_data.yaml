@@ -1,0 +1,7 @@
+name: nyc_yellow_taxi_trip_data
+replication: 1
+partitions: 5
+configs:
+  compression.type: gzip
+  retention.bytes: "26214400"
+  segment.bytes: "8388608"

@@ -1,0 +1,38 @@
+name: cc_payments-value
+avroSchema: |-
+  {
+    "type": "record",
+    "name": "Payment",
+    "namespace": "com.landoop.data.generator.domain.payments",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "time",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 38,
+          "scale": 18
+        }
+      },
+      {
+        "name": "currency",
+        "type": "string"
+      },
+      {
+        "name": "creditCardId",
+        "type": "string"
+      },
+      {
+        "name": "merchantId",
+        "type": "long"
+      }
+    ]
+  }

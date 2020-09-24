@@ -1,0 +1,28 @@
+name: fast_vessel_processor-value
+avroSchema: |-
+  {
+    "type": "record",
+    "name": "record",
+    "fields": [
+      {
+        "name": "MMSI",
+        "type": "long"
+      },
+      {
+        "name": "Speed",
+        "type": "float"
+      },
+      {
+        "name": "Long",
+        "type": "double"
+      },
+      {
+        "name": "Lat",
+        "type": "double"
+      },
+      {
+        "name": "Timestamp",
+        "type": "long"
+      }
+    ]
+  }

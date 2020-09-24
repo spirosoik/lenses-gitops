@@ -1,0 +1,8 @@
+name: telecom_italia_data
+replication: 1
+partitions: 4
+configs:
+  cleanup.policy: delete
+  compression.type: lz4
+  retention.bytes: "26214400"
+  segment.bytes: "8388608"
