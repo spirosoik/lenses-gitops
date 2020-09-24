@@ -1,0 +1,35 @@
+name: telecom_italia_grid-value
+avroSchema: |-
+  {
+    "type": "record",
+    "name": "milanoRecord",
+    "namespace": "com.landoop.telecom.telecomitalia.grid",
+    "doc": "Schema for Grid for Telecommunications Data from Telecom Italia.",
+    "fields": [
+      {
+        "name": "SquareId",
+        "type": "int",
+        "doc": " The id of the square that is part of the Milano GRID"
+      },
+      {
+        "name": "Polygon",
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "coordinates",
+            "fields": [
+              {
+                "name": "longitude",
+                "type": "double"
+              },
+              {
+                "name": "latitude",
+                "type": "double"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

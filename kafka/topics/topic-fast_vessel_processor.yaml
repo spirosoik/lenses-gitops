@@ -1,0 +1,5 @@
+name: fast_vessel_processor
+replication: 1
+partitions: 1
+configs:
+  segment.bytes: "104857600"
