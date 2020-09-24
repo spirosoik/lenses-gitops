@@ -7,8 +7,7 @@ avroSchema: |-
     "fields": [
       {
         "name": "MMSI",
-        "type": "long",
-        "doc": "User ID (MMSI)"
+        "type": "long"
       }
     ]
   }
