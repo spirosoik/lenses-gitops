@@ -1,8 +1,0 @@
-clusterName: dev
-name: logs-broker
-config:
-  connector.class: org.apache.kafka.connect.file.FileStreamSourceConnector
-  file: /var/log/broker.log
-  name: logs-broker
-  tasks.max: "1"
-  topic: logs_broker

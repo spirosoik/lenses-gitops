@@ -1,8 +1,0 @@
-clusterName: dev
-name: nullsink
-config:
-  connector.class: org.apache.kafka.connect.file.FileStreamSinkConnector
-  file: /dev/null
-  name: nullsink
-  tasks.max: "4"
-  topics: nyc_yellow_taxi_trip_data,sea_vessel_position_reports,telecom_italia_data
